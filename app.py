@@ -5,7 +5,7 @@ import plotly.express as px
 
 # Setting page configuration
 st.set_page_config(
-    page_title="Global Superstore Dashboard",
+    page_title="Dashboard",
     page_icon=":bar_chart:",
     layout="wide"
 )
@@ -43,5 +43,7 @@ st.markdown('<div class="center subheader"><h3>An Analysis of Sales Data<h3></di
 # Read the dataset
 df = pd.read_excel("cleaned_dataset.xlsx", engine='openpyxl')
 
+# Creating three-column layout
+col1, col2, col3 = st.columns(3)
 
 
