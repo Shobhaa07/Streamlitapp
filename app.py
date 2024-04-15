@@ -40,7 +40,7 @@ st.markdown('<div class="bordered">', unsafe_allow_html=True)
 st.markdown('<div class="center header"><h1>Global Superstore Dashboard<h1></div>', unsafe_allow_html=True)
 st.markdown('<div class="center subheader"><h3>An Analysis of Sales Data<h3></div>', unsafe_allow_html=True)
 
-# Read the data
+# Read the dataset
 df = pd.read_excel("cleaned_dataset.xlsx", engine='openpyxl')
 
 
