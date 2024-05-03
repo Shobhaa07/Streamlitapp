@@ -52,4 +52,8 @@ with col1:
         fig_box.update_traces(marker=dict(color='green'))
         st.plotly_chart(fig_box, use_container_width=True)
 
-
+# Bar Chart
+with col2:
+        fig_bar = px.bar(df, x='Ship Mode', y='Shipping Cost', title='Bar Chart')
+        fig_bar.update_traces(marker=dict(color='#eba434')) 
+        st.plotly_chart(fig_bar, use_container_width=True)
