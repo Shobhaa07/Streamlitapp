@@ -46,4 +46,10 @@ df = pd.read_excel("cleaned_dataset.xlsx", engine='openpyxl')
 # Creating three-column layout
 col1, col2, col3 = st.columns(3)
 
+# Box Plot
+with col1:
+        fig_box = px.box(df, x='Sub-Category', y='Quantity', title='Box Plot')
+        fig_box.update_traces(marker=dict(color='green'))
+        st.plotly_chart(fig_box, use_container_width=True)
+
 
