@@ -2,12 +2,6 @@
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-import plotly.graph_objects as go
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
-from dash import dcc
-from dash import html
 
 # Setting page configuration
 st.set_page_config(
