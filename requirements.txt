@@ -1,5 +1,4 @@
 plotly
-python
 streamlit>=1.18
 pandas
 pydeck
