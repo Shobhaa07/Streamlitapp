@@ -62,3 +62,8 @@ with col3:
         fig_donut = px.pie(df, names='Order Priority', title='Donut Chart', hole=0.5)
         st.plotly_chart(fig_donut, use_container_width=True)
 
+# Histogram
+with col1:   
+        fig_hist = px.histogram(df, x='Region', title='Histogram')
+        fig_hist.update_traces(marker=dict(color='#800080'))
+        st.plotly_chart(fig_hist, use_container_width=True)
