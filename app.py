@@ -56,3 +56,9 @@ with col2:
         fig_bar = px.bar(df, x='Ship Mode', y='Shipping Cost', title='Bar Chart')
         fig_bar.update_traces(marker=dict(color='#eba434')) 
         st.plotly_chart(fig_bar, use_container_width=True)
+
+# Donut Chart
+with col3:   
+        fig_donut = px.pie(df, names='Order Priority', title='Donut Chart', hole=0.5)
+        st.plotly_chart(fig_donut, use_container_width=True)
+
