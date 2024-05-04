@@ -71,7 +71,6 @@ with col1:
 # Area Chart
 with col2:    
         fig_area = px.area(df, x='Market', y='Profit', title='Area Chart')
-        fig_area.update_traces(marker=dict(color='black'))
         st.plotly_chart(fig_area, use_container_width=True)
 
 # Heatmap
