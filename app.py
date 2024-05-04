@@ -73,4 +73,12 @@ with col2:
         fig_area = px.area(df, x='Market', y='Profit', title='Area Chart')
         st.plotly_chart(fig_area, use_container_width=True)
 
+# Heatmap
+with col3:
+    sales_by_country = df.groupby('Country')['Sales'].sum().reset_index()
+    top_10_countries = sales_by_country.nlargest(10, 'Sales')
+    df_top_10_countries = df[df['Country'].isin(top_10_countries['Country'])]
+    fig_heatmap_top_10 = px.density_heatmap(df_top_10_countries, x='Country', y='Sales', title='Heatmap of Top 10 Countries in Sales',color_continuous_scale='reds')
+    st.plotly_chart(fig_heatmap_top_10, use_container_width=True)
+
 
