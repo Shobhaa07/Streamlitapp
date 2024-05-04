@@ -54,7 +54,7 @@ with col1:
 # Bar Chart
 with col2:
         fig_bar = px.bar(df, x='Ship Mode', y='Shipping Cost', title='Bar Chart')
-        fig_bar.update_traces(marker=dict(color='#FF8C00')) 
+        fig_bar.update_traces(marker=dict(color='blue')) 
         st.plotly_chart(fig_bar, use_container_width=True)
 
 # Donut Chart
