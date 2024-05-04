@@ -1,4 +1,5 @@
-Python
-pandas
-streamlit
 plotly
+streamlit
+pandas
+pydeck
+Python
