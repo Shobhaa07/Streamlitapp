@@ -63,7 +63,7 @@ with col3:
     st.plotly_chart(fig_donut, use_container_width=True)
 
 # Add some space between the first and second rows of charts
-st.write\n("")
+st.write("")
 
 # Histogram
 with col1:   
