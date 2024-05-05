@@ -54,24 +54,24 @@ with col1:
         st.plotly_chart(fig_box, use_container_width=True)
 
 # Bar Chart
-with col2:
+with col3:
         fig_bar = px.bar(df, x='Ship Mode', y='Shipping Cost', title='Bar Chart')
         fig_bar.update_traces(marker=dict(color='black')) 
         st.plotly_chart(fig_bar, use_container_width=True)
 
 # Donut Chart
-with col3:   
+with col1:   
         fig_donut = px.pie(df, names='Order Priority', title='Donut Chart', hole=0.5)
         st.plotly_chart(fig_donut, use_container_width=True)
 
 # Histogram
-with col1:   
+with col3:   
         fig_hist = px.histogram(df, x='Region', title='Histogram')
         fig_hist.update_traces(marker=dict(color='#800080'))
         st.plotly_chart(fig_hist, use_container_width=True)
 
 # Violin Chart
-with col2:
+with col1:
     fig_violin = px.violin(df, x='Market', y='Profit', title='Violin Chart')
     st.plotly_chart(fig_violin, use_container_width=True)
 
