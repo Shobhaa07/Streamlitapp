@@ -68,7 +68,7 @@ st.write("")
 # Histogram
 with col1:   
     fig_hist = px.histogram(df, x='Region', title='Histogram')
-    fig_hist.update_traces(marker=dict(color='#800080'))
+    fig_hist.update_traces(marker=dict(color='#32012F'))
     st.plotly_chart(fig_hist, use_container_width=True)
 
 # Violin Chart
