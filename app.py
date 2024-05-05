@@ -3,11 +3,13 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+# Add page configuration 
 st.set_page_config(
     page_title="Dashboard",
     page_icon=":bar_chart:",
     layout="wide"
 )
+
 # Custom CSS to style the dashboard
 st.markdown(
     """
