@@ -71,9 +71,9 @@ with col1:
     fig_hist.update_traces(marker=dict(color='#910A67'))
     st.plotly_chart(fig_hist, use_container_width=True)
 
-# Violin Chart
+# Violin Plot
 with col2:
-    fig_violin = px.violin(df, x='Market', y='Profit', title='Violin Chart')
+    fig_violin = px.violin(df, x='Market', y='Profit', title='Violin Plot')
     st.plotly_chart(fig_violin, use_container_width=True)
 
 # Heatmap
